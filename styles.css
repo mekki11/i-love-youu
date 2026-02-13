@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #FFF8FD;
+    color: #333333;
+    line-height: 1.6;
+}
+
+header.hero {
+    background-color: #FF69B4;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #FFFFFF;
+    text-align: center;
+    position: relative;
+}
+
+nav.nav {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 50px;
+    font-size: 18px;
+}
+
+nav.nav a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+nav.nav a:hover {
+    color: #FFD1EC;
+}
+
+.hero-text h1 {
+    font-size: 64px;
+    margin-bottom: 20px;
+}
+
+.hero-text p {
+    font-size: 22px;
+}
+
+.about {
+    padding: 100px 80px;
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 48px;
+    margin-bottom: 30px;
+    color: #FF69B4;
+}
+
+.about p {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 18px;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    padding: 100px 80px;
+}
+
+.gallery .photo {
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 12px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.gallery .photo:hover {
+    transform: scale(1.05);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+}
+
+.large {
+    grid-column: span 2;
+}
+
+.contact {
+    padding: 100px 80px;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 48px;
+    margin-bottom: 30px;
+    color: #FF69B4;
+}
+
+.footer {
+    background-color: #333333;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 50px;
+    font-size: 16px;
+}
